@@ -22,13 +22,12 @@ const Nav1 = (props) => {
 
     return (
         <Fragment>
-            <Navbar className="navbar-transparent fixed-top" expand="md">
+            <Navbar className="navbar-transparent" expand="md">
                 <Container>
-                    <Link className='navbar-brand' to='/'>Navbar</Link>
+                    <Link className='navbar-brand' to='/'><span>CREATIVE</span> Blog</Link>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>
-                            <Navitem name='Home' url='/' />
                             <Navitem name='About' url='about' />
                             <Navitem name='Services' url='services' />
                             <Navitem name='Contact' url='contact' />
