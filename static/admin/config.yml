@@ -13,18 +13,6 @@ collections:
       - { name: path, label: Path, required: true }
       - { name: date, label: Date, widget: datetime, required: true }
       - { name: title, label: Title, required: true }
-      - { label: Categories,
-        name: categories,
-        widget: ncw-file-relation,
-        collection: setting,
-        file: static/assets/categories/categories.json,
-        target_field: categories,
-        id_field: id,
-        display_fields: name,
-        multiple: true,
-        hint: This widget retrives options from a object list in a file collection }
-
+      - { label: "Tags" name: "tags" widget: "list" default: ["news, netlify, hwlo"] }
       - { name: image, label: Cover,  widget: image, required: true }
       - { name: body, label: Body, widget: markdown } 
-    meta:
-      - {label: "SEO", name: "keywords", widget: "text"}
