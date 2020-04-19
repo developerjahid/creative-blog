@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import window from "global"
 import { Nav, Navbar, Collapse, NavbarToggler, Container } from "reactstrap"
 import Navitem from "./navitem"
+import Logo from "../../../../images/logo.webp"
 
 const Nav1 = (props) => {
 
@@ -22,9 +23,9 @@ const Nav1 = (props) => {
 
     return (
         <Fragment>
-            <Navbar className="navbar-transparent" expand="md">
+            <Navbar className="navbar-transparent fixed-top navbar-light" expand="md">
                 <Container>
-                    <Link className='navbar-brand' to='/'><span>CREATIVE</span> Blog</Link>
+                    <Link className='navbar-brand' to='/'><img src={Logo} alt="logo"/></Link>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>

@@ -13,6 +13,26 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    //netlify-cms
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        manualInit: true,
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto\:400,500`,
+           // `source sans pro\:300,400,400i,700`
+        ],
+        display: 'swap'
+      }
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,8 +40,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+
     `gatsby-transformer-sharp`,
+
     `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

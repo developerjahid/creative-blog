@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: developerjahid/creative-blog
+
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: blog
+    label: Blog
+    folder: src/__blog
+    create: true
+    fields:
+      - { name: path, label: Path, required: true }
+      - { name: date, label: Date, widget: datetime, required: true }
+      - { name: title, label: Title, required: true }
+      - { label: Categories,
+        name: categories,
+        widget: ncw-file-relation,
+        collection: setting,
+        file: categories,
+        target_field: categories,
+        id_field: id,
+        display_fields: name,
+        multiple: true,
+        hint: This widget retrives options from a object list in a file collection }
+
+      - { name: image, label: Cover,  widget: image, required: true }
+      - { name: body, label: Body, widget: markdown } 
+    meta:
+      - {label: "SEO", name: "keywords", widget: "text"}

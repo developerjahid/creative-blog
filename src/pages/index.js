@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout"
 
 const IndexPage = () => (
   <Layout>
-    <header>Hello Homepage</header>
+    <div className="homepage navtop"> hello guys</div>
   </Layout>
 )
 

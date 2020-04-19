@@ -1,4 +1,25 @@
+/* ---- Global Css ---- */
+body {
+    font-family: "Roboto";
+    letter-spacing: 0.4px;
+}
+.navtop {
+    margin-top: 55px;
+}
+
 /* ---- Navbar ---- */
+.navbar {
+    height: 55px;
+    border-bottom: 1px solid #f1f1f1;
+}
 .scroll {
     background: black;
+}
+.nav-link {
+    color: #000;
+}
+
+/* ---- Homepage ---- */
+.homepage {
+    
 }
