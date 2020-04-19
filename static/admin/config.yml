@@ -17,7 +17,7 @@ collections:
         name: categories,
         widget: ncw-file-relation,
         collection: setting,
-        file: categories,
+        file: static/assets/categories/categories.json,
         target_field: categories,
         id_field: id,
         display_fields: name,
