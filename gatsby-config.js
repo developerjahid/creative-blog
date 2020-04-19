@@ -13,15 +13,9 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    //netlify-cms
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        
-      },
-    },
 
-    `gatsby-transformer-remark`,
+    //netlify-cms
+    `gatsby-plugin-netlify-cms`,
 
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -43,6 +37,15 @@ module.exports = {
     },
 
     `gatsby-transformer-sharp`,
+
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/blog`,
+        name: `blog`,
+      },
+    },
 
     `gatsby-plugin-sharp`,
 
