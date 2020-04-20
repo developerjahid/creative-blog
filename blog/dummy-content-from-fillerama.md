@@ -1,5 +1,5 @@
 ---
-path: dummy-content-form
+path: /dummy-content-form
 date: 2020-04-19T13:44:02.157Z
 title: Dummy Content from Fillerama
 tags:

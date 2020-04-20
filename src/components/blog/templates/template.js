@@ -10,7 +10,7 @@ export default function template({ data }) {
   return (
     <Layout>
         <div className="container space">
-            <div className="blog-post text-center">
+            <div className="blog-post">
                 <img src={frontmatter.image} alt={frontmatter.title} />
                 <h3 className="blog-title">{frontmatter.title}</h3>
                 <h6>{frontmatter.date}</h6>
