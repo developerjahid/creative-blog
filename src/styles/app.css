@@ -1,25 +1,41 @@
 /* ---- Global Css ---- */
 body {
-    font-family: "Roboto";
-    letter-spacing: 0.4px;
+  letter-spacing: 0.4px;
 }
 .navtop {
-    margin-top: 55px;
+  margin-top: 55px;
 }
 
 /* ---- Navbar ---- */
 .navbar {
-    height: 55px;
-    border-bottom: 1px solid #f1f1f1;
+  height: 85px;
 }
 .scroll {
-    background: black;
+  background: black;
 }
 .nav-link {
-    color: #000;
+  color: #000;
 }
 
 /* ---- Homepage ---- */
-.homepage {
-    
+.hero-header {
+  padding: 45px 0;
+  max-width: 980px;
+}
+.headline {
+  font-weight: 900;
+  font-size: 30px;
+}
+.primary-content {
+  font-size: 18px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.button.-primary {
+  color: #fff;
+  padding: 12px 21px;
+  border-radius: 23px;
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+  text-decoration: none;
 }
