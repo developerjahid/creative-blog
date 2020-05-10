@@ -2,11 +2,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import {
+  CardColumns,
   Card,
   CardImg,
   CardTitle,
-  CardDeck,
-  CardBody,
+  CardImgOverlay,
   CardSubtitle,
 } from "reactstrap"
 import "../styles/app.css"
@@ -31,22 +31,27 @@ const IndexPage = ({ data }) => {
             Get in touch →
           </Link>
         </div>
-        <CardDeck className="post">
-          {posts.map(post => (
-            <Card>
-              <CardImg
-                top
-                width="100%"
-                src={post.node.frontmatter.image}
-                alt={post.node.frontmatter.title}
-              />
-              <CardBody>
-                <CardTitle>{post.node.frontmatter.title}</CardTitle>
-                <CardSubtitle>{post.node.frontmatter.date}</CardSubtitle>
-              </CardBody>
-            </Card>
-          ))}
-        </CardDeck>
+        <div className="recent-post">
+          <div className="recent">Recent Posts</div>
+          <CardColumns className="post">
+            {posts.map(post => (
+              <Link to={post.node.frontmatter.path}>
+                <Card className="show-post" inverse>
+                  <CardImg
+                    top
+                    width="100%"
+                    src={post.node.frontmatter.image}
+                    alt={post.node.frontmatter.title}
+                  />
+                  <CardImgOverlay className="overtext">
+                    <CardTitle>{post.node.frontmatter.title}</CardTitle>
+                    <CardSubtitle>{post.node.frontmatter.date}</CardSubtitle>
+                  </CardImgOverlay>
+                </Card>
+              </Link>
+            ))}
+          </CardColumns>
+        </div>
       </div>
     </Layout>
   )

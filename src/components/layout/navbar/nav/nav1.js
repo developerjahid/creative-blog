@@ -13,6 +13,7 @@ const Nav1 = props => {
             <img src={Logo} alt="logo" />
           </Link>
           <Nav className="ml-auto" navbar>
+            <Navitem name="Tags" url="tags" />
             <Navitem name="Contact" url="contact" />
           </Nav>
         </Container>

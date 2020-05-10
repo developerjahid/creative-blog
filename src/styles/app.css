@@ -39,3 +39,92 @@ body {
   background: linear-gradient(to right, #fc00ff, #00dbde);
   text-decoration: none;
 }
+.overtext {
+  top: inherit !important;
+  bottom: 0 !important;
+  max-width: 302px;
+  z-index: 2;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: normal;
+}
+.card-subtitle {
+  font-size: 12px;
+  font-weight: 100;
+}
+.recent {
+  padding: 42px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ---- Post Templetes ---- */
+.post-thumbnail {
+  text-align: center;
+  min-height: 380px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 18px;
+  margin-bottom: 36px;
+  display: grid;
+  align-content: center;
+  position: relative;
+  padding: 18px;
+  overflow: hidden;
+}
+.post-thumbnail:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.27);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.blog-title {
+  color: #fff;
+  z-index: 2;
+}
+.blog-date {
+  color: #fff;
+  z-index: 2;
+  font-size: 13px;
+  font-weight: 500;
+}
+.show-post::before {
+  content: "";
+  background: rgba(181, 181, 181, 0.27);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.blog-post {
+  padding-top: 25px;
+}
+
+/* ---- Tag page ---- */
+.horizontal-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+.horizontal-list li {
+  display: inline;
+  background: #ecb628c9;
+  margin: 6px;
+  padding: 2px;
+  border-radius: 22px;
+}
+.horizontal-list li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 15px;
+  font-size: 13px;
+}

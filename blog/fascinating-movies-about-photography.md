@@ -4,8 +4,8 @@ date: 2020-05-10T07:03:55.204Z
 title: Fascinating movies about photography
 tags:
   - Fascinating
-  - photography
-keywords: 'Fascinating,code,photography'
+  - code
+keywords: "Fascinating,code,photography"
 description: >-
   If you've been inside for days on end amid the COVID-19 pandemic, you might be
   getting a little saddened by missing all the great exhibitions you had planned
@@ -20,13 +20,14 @@ description: >-
   Photographers?
 image: /assets/photo-1542038784456-1ea8e935640e.jpg
 ---
+
 <!--StartFragment-->
 
 # No, I'll fix it. I'm good at fixing rot. Call me the Rotmeister. No, I'm the Doctor. Don't call me the Rotmeister.
 
 I am the Doctor, and you are the Daleks! You hit me with a cricket bat. You know when grown-ups tell you 'everything's going to be fine' and you think they're probably lying to make you feel better? You hit me with a cricket bat.
 
-You've swallowed a planet! No… It's a thing; it's like a plan, but with more greatness. You hate me; you want to kill me! Well, go on!**Kill me!***KILL ME!*Sorry, checking all the water in this area; there's an escaped fish.
+You've swallowed a planet! No… It's a thing; it's like a plan, but with more greatness. You hate me; you want to kill me! Well, go on!**Kill me!\***KILL ME!\*Sorry, checking all the water in this area; there's an escaped fish.
 
 ## Did I mention we have comfy chairs?
 
